@@ -1,0 +1,12 @@
+import { useState } from 'react'
+import Banner from '@ddsweb/banner';
+
+const SimpleBanner2 = (props) => {
+	return <Banner
+		headline={props.title}
+
+		image={{
+			alt: props.title || ' ',
+	    	large: props.background.src,
+		}} />
+};
